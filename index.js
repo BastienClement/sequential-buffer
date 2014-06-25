@@ -25,6 +25,9 @@ var DEFAULT_SIZE = 1024;
 var DEFAULT_EXPAND = 2;
 
 function SequentialBuffer(buffer, expand) {
+	if (!(this instanceof SequentialBuffer))
+		return new SequentialBuffer(buffer, expand);
+
 	if (Buffer.isBuffer(buffer)) {
 		this.buffer = buffer;
 		this.size = buffer.length;
