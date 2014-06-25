@@ -1,0 +1,7 @@
+{
+  "name": "sequential-buffer",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "git://github.com/galedric/sequential-buffer.git",
+  "description": "Sequential read / write to buffers"
+}
