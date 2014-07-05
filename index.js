@@ -398,7 +398,7 @@ SequentialBuffer.prototype.nextBuffer = function(length) {
 	return b;
 };
 
-SequentialBuffer.prototype.nextShadowBuffer = function() {
+SequentialBuffer.prototype.nextShadowBuffer = function(length) {
 	return this.buffer.slice(this.prepare(length), this.position);
 };
 
