@@ -421,8 +421,8 @@ SequentialBuffer.prototype.writeBytes = function(bytes) {
  * String
  */
 
-SequentialBuffer.prototype.nextString = function(length) {
-	return this.buffer.toString("utf-8", this.prepare(length), this.position);
+SequentialBuffer.prototype.nextString = function(length, encoding) {
+	return this.buffer.toString(encoding || "utf8", this.prepare(length), this.position);
 };
 
 SequentialBuffer.prototype.writeString = function(string) {
